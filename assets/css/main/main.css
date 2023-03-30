@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
+
+/* ==============================================================
+  공통
+==============================================================*/
+.action_btn { background: #000; color: white; font-weight: 700; padding:12px 24px; border-radius: 32px;}
+.container { width: 100%; max-width: 1140px; margin: 0 auto; }
+/* ==============================================================
+  header
+==============================================================*/
+header { width: 100%; padding:17px 32px !important; display: flex; margin: 0 auto;
+align-items: center; justify-content: space-between;}
+header .nav_item { font-weight: 500; display: flex; flex-flow: row; gap: 24px; }
+
+/* ==============================================================
+  main
+==============================================================*/
+.hero_wrap .container { max-width: inherit;}
+.hero_wrap .hero_top { width: 100%; max-width: 1140px; display: flex; flex-flow: row; justify-content: space-between; margin: 64px auto; }
+.hero_wrap .hero_top .hero_info_box { width: calc(100% - 550px); padding: 70px 130px 70px 0; }
+.hero_wrap .hero_top .hero_info_box .title { font-weight: 900; letter-spacing: -1px; font-size: 56px; line-height: 1.07;
+margin-bottom: 24px;}
+.hero_wrap .hero_top .hero_info_box .sub_txt { font-size: 18px; line-height: 1.5; margin-bottom: 40px; }
+.hero_wrap .hero_top .hero_info_box .bottom_box { display: flex; flex-flow: row; gap: 20px; }
+.hero_wrap .hero_top .hero_info_box .bottom_box p { font-weight: 600; font-size: 14px; line-height: 1.4; }
+.hero_wrap .hero_top .hero_img_box { width: 550px; }
+.hero_wrap .hero_bottom { padding: 64px 0; background: #F3F3F3; }
+.hero_wrap .hero_bottom ul { display: flex; flex-flow: row; width: 100%; max-width: 1140px; margin: 0 auto; gap: 30px; }
+.hero_wrap .hero_bottom ul li .title { position: relative; padding-left: 56px; margin-bottom: 22px; font-size: 18px; font-weight: 700;}
+.hero_wrap .hero_bottom ul li .title:after { content: ""; position: absolute; left: 0; top:50%; transform: translateY(-50%); background: #000;
+width: 40px; height: 40px; border-radius: 50%; }
+.hero_wrap .hero_bottom ul li .desc { letter-spacing: -0.1px; line-height: 1.5; }
+
+/* ==============================================================
+   미디어쿼리 Tablet 1200
+==============================================================*/
+/* ==============================================================
+   미디어쿼리 Mobile
+==============================================================*/
