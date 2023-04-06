@@ -7,7 +7,7 @@
   공통
 ==============================================================*/
 .action_btn { background: #000; color: white; font-weight: 700; padding:12px 24px; border-radius: 32px;}
-.container { width: 100%; max-width: 1140px; margin: 0 auto; }
+.container { width: 100%; max-width: 1208px; margin: 0 auto; padding: 0 32px; }
 /* ==============================================================
   header
 ==============================================================*/
@@ -18,8 +18,8 @@ header .nav_item { font-weight: 500; display: flex; flex-flow: row; gap: 24px; }
 /* ==============================================================
   main
 ==============================================================*/
-.hero_wrap .container { max-width: inherit;}
-.hero_wrap .hero_top { width: 100%; max-width: 1140px; display: flex; flex-flow: row; justify-content: space-between; margin: 64px auto; }
+.hero_wrap .container { max-width: inherit; padding: inherit;}
+.hero_wrap .hero_top { width: 100%; max-width: 1208px; margin: 64px auto; padding: 0 32px; display: flex; flex-flow: row; justify-content: space-between; }
 .hero_wrap .hero_top .hero_info_box { width: calc(100% - 550px); padding: 70px 130px 70px 0; }
 .hero_wrap .hero_top .hero_info_box .title { font-weight: 900; letter-spacing: -1px; font-size: 56px; line-height: 1.07;
 margin-bottom: 24px;}
@@ -27,14 +27,14 @@ margin-bottom: 24px;}
 .hero_wrap .hero_top .hero_info_box .bottom_box { display: flex; flex-flow: row; gap: 20px; }
 .hero_wrap .hero_top .hero_info_box .bottom_box p { font-weight: 600; font-size: 14px; line-height: 1.4; }
 .hero_wrap .hero_top .hero_img_box { width: 550px; }
-.hero_wrap .hero_bottom { padding: 64px 0; background: #F3F3F3; }
+.hero_wrap .hero_bottom { padding: 64px 32px; background: #F3F3F3; }
 .hero_wrap .hero_bottom ul { display: flex; flex-flow: row; width: 100%; max-width: 1140px; margin: 0 auto; gap: 30px; }
 .hero_wrap .hero_bottom ul li .title { position: relative; padding-left: 56px; margin-bottom: 22px; font-size: 18px; font-weight: 700;}
 .hero_wrap .hero_bottom ul li .title:after { content: ""; position: absolute; left: 0; top:50%; transform: translateY(-50%); background: #000;
 width: 40px; height: 40px; border-radius: 50%; }
 .hero_wrap .hero_bottom ul li .desc { letter-spacing: -0.1px; line-height: 1.5; }
 
-.brand_info_wrap { background: #000; padding: 96px 156px;}
+.brand_info_wrap { background: #000; margin: 0 auto; padding: 96px 0; }
 .brand_info_wrap .container { display: flex; flex-flow: row; align-items: center; }
 .brand_info_wrap .img_box { width: 550px; }
 .brand_info_wrap .info_box { color: white; width: calc(100% - 550px); padding-left: 133px; }
@@ -45,7 +45,7 @@ width: 40px; height: 40px; border-radius: 50%; }
    width: 4px; height: 4px; background: white; border-radius: 50%;}
 .brand_info_wrap .info_box .desc_list p:last-child { margin-bottom: 0; }
 
-.testimonial_wrap { margin: 96px 150px 124px; }
+.testimonial_wrap { margin: 96px auto 124px; }
 .testimonial_wrap .info_group { display: flex; flex-flow: row; gap: 30px; }
 .testimonial_wrap .info_group .info_group_item { background: #F3F3F3; border-radius: 8px; padding: 24px; }
 .testimonial_wrap .info_group .info_group_item .text { font-size: 18px; line-height: 1.56; margin-bottom: 56px; }
@@ -81,7 +81,7 @@ footer .container .info_group .subscribe input { width: 100%; padding: 12px 52px
 footer .container .info_group .subscribe input,
 footer .container .info_group .subscribe input::placeholder
 { font-family: 'Inter',  sans-serif;  color:  rgba(225,225,225,0.5); line-height: 1.5; font-size: 16px;  }
-footer .container .info_group .subscribe p { color:  rgba(225,225,225,0.4); font-size: 14px; line-height: 1.4; }
+footer .container .info_group .subscribe p { color: rgba(225,225,225,0.4); font-size: 14px; line-height: 1.4; }
 
 /* ==============================================================
    미디어쿼리 Tablet 1200
