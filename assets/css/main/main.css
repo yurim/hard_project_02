@@ -34,6 +34,55 @@ margin-bottom: 24px;}
 width: 40px; height: 40px; border-radius: 50%; }
 .hero_wrap .hero_bottom ul li .desc { letter-spacing: -0.1px; line-height: 1.5; }
 
+.brand_info_wrap { background: #000; padding: 96px 156px;}
+.brand_info_wrap .container { display: flex; flex-flow: row; align-items: center; }
+.brand_info_wrap .img_box { width: 550px; }
+.brand_info_wrap .info_box { color: white; width: calc(100% - 550px); padding-left: 133px; }
+.brand_info_wrap .info_box .title { font-size: 24px; font-weight: 900;line-height: 1.3; letter-spacing: -0.1px; margin-bottom: 16px; }
+.brand_info_wrap .info_box .sub_txt { line-height: 1.5; letter-spacing: -0.1px; margin-bottom: 16px;}
+.brand_info_wrap .info_box .desc_list p { line-height: 1.5; letter-spacing: -0.1px; margin-bottom: 8px; position: relative; padding-left: 16px;}
+.brand_info_wrap .info_box .desc_list p:before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+   width: 4px; height: 4px; background: white; border-radius: 50%;}
+.brand_info_wrap .info_box .desc_list p:last-child { margin-bottom: 0; }
+
+.testimonial_wrap { margin: 96px 150px 124px; }
+.testimonial_wrap .info_group { display: flex; flex-flow: row; gap: 30px; }
+.testimonial_wrap .info_group .info_group_item { background: #F3F3F3; border-radius: 8px; padding: 24px; }
+.testimonial_wrap .info_group .info_group_item .text { font-size: 18px; line-height: 1.56; margin-bottom: 56px; }
+.testimonial_wrap .info_group .info_group_item .item_footer { margin-top: 16px; display: flex; flex-flow: row; justify-content: space-between; }
+.testimonial_wrap .info_group .info_group_item .item_footer .name p:first-child { font-weight: 700; line-height: 1.5;
+    letter-spacing: -0.1px; margin-bottom: 4px; }
+.testimonial_wrap .info_group .info_group_item .item_footer .name p:last-child { font-size: 14px; line-height: 1.4; }
+.testimonial_wrap .info_group .info_group_item .item_footer .icons { display: flex; flex-flow: row; gap: 16px; align-items: flex-end; }
+
+.cta_wrap { position: relative; width: 100%; padding: 192px 0; }
+.cta_wrap .bg_img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../../image/cta-img.png") no-repeat;
+    background-position: center; background-size: cover; background-attachment: fixed; z-index: 1}
+.cta_wrap .info_box {  position: relative; z-index: 1; color: white; text-align: center; }
+.cta_wrap .info_box .top_txt { font-weight: 500; line-height: 1.5; margin-bottom: 12px; }
+.cta_wrap .info_box .title { font-weight: 900; font-size: 40px; line-height: 1.2; letter-spacing:  -0.5px; margin-bottom: 32px;}
+.cta_wrap .info_box .action_btn { background: white; color: black; }
+
+footer { background: black; color: white; padding: 96px 0 !important; }
+footer .container { display: flex; flex-flow: row; }
+footer .container h1 { display: inline-flex; margin-right: 95px; }
+footer .container h1 a { display: block; width: 100px; }
+footer .container .info_group { display: flex; flex-flow: row; width: 100%; }
+footer .container .info_group .group_item { flex: 1; display: flex; flex-flow: column;  margin-right: 35px; }
+footer .container .info_group .group_item h2 { margin-bottom: 16px; line-height: 1.5; letter-spacing: -0.1px; }
+footer .container .info_group .group_item a { font-size: 14px; line-height: 1.4; }
+footer .container .info_group .group_item a + a { margin-top: 8px;}
+footer .container .info_group .subscribe { width: 360px; }
+footer .container .info_group .subscribe h2 { margin-bottom: 24px; }
+footer .container .info_group .subscribe .search_box { position: relative; margin-bottom: 20px; }
+footer .container .info_group .subscribe input { width: 100%; padding: 12px 52px 12px 24px; border-radius: 40px;
+    border: none; background: rgba(225,225,225,0.15) url("../../image/Icon-airplane.svg") no-repeat;
+    background-position: right 24px center; }
+footer .container .info_group .subscribe input,
+footer .container .info_group .subscribe input::placeholder
+{ font-family: 'Inter',  sans-serif;  color:  rgba(225,225,225,0.5); line-height: 1.5; font-size: 16px;  }
+footer .container .info_group .subscribe p { color:  rgba(225,225,225,0.4); font-size: 14px; line-height: 1.4; }
+
 /* ==============================================================
    미디어쿼리 Tablet 1200
 ==============================================================*/
