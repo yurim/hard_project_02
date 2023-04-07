@@ -20,7 +20,7 @@ header .nav_item { font-weight: 500; display: flex; flex-flow: row; gap: 24px; }
 ==============================================================*/
 .hero_wrap .container { max-width: inherit; padding: inherit;}
 .hero_wrap .hero_top { width: 100%; max-width: 1208px; margin: 64px auto; padding: 0 32px; display: flex; flex-flow: row; justify-content: space-between; }
-.hero_wrap .hero_top .hero_info_box { width: calc(100% - 550px); padding: 70px 130px 70px 0; }
+.hero_wrap .hero_top .hero_info_box { width: calc(100% - 550px); padding: 70px 15px 70px 0; }
 .hero_wrap .hero_top .hero_info_box .title { font-weight: 900; letter-spacing: -1px; font-size: 56px; line-height: 1.07;
 margin-bottom: 24px;}
 .hero_wrap .hero_top .hero_info_box .sub_txt { font-size: 18px; line-height: 1.5; margin-bottom: 40px; }
