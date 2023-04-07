@@ -69,11 +69,11 @@ footer .container h1 { display: inline-flex; margin-right: 95px; }
 footer .container h1 a { display: block; width: 100px; }
 footer .container .info_group { display: flex; flex-flow: row; width: 100%; }
 footer .container .info_group .group_item { flex: 1; display: flex; flex-flow: column;  margin-right: 35px; }
-footer .container .info_group .group_item h2 { margin-bottom: 16px; line-height: 1.5; letter-spacing: -0.1px; }
+footer .container .info_group .group_item h2 {font-size: 16px; margin-bottom: 16px; line-height: 1.5; letter-spacing: -0.1px; }
 footer .container .info_group .group_item a { font-size: 14px; line-height: 1.4; }
 footer .container .info_group .group_item a + a { margin-top: 8px;}
 footer .container .info_group .subscribe { width: 360px; }
-footer .container .info_group .subscribe h2 { margin-bottom: 24px; }
+footer .container .info_group .subscribe h2 { margin-bottom: 24px; font-size: 16px; }
 footer .container .info_group .subscribe .search_box { position: relative; margin-bottom: 20px; }
 footer .container .info_group .subscribe input { width: 100%; padding: 12px 52px 12px 24px; border-radius: 40px;
     border: none; background: rgba(225,225,225,0.15) url("../../image/Icon-airplane.svg") no-repeat;
@@ -86,6 +86,35 @@ footer .container .info_group .subscribe p { color: rgba(225,225,225,0.4); font-
 /* ==============================================================
    미디어쿼리 Tablet 1200
 ==============================================================*/
+@media all and (max-width: 1024px) {
+    .hero_wrap .hero_top { margin: 43px auto 34px; flex-flow: column; }
+    .hero_wrap .hero_top .hero_info_box { width: 100%; padding: 0 0 63px 0; text-align: center; max-width: 550px; margin: 0 auto;}
+    .hero_wrap .hero_top .hero_info_box .sub_txt { margin-bottom: 20px; }
+    .hero_wrap .hero_top .hero_info_box .bottom_box { justify-content: center; align-items: center; }
+    .hero_wrap .hero_top .hero_info_box .bottom_box .hide-mobile { display: none; }
+    .hero_wrap .hero_top .hero_img_box { width: 100%;}
+    .hero_wrap .hero_top .hero_img_box img { width: 100%; height: 100%; max-height: 450px; object-fit: cover; border-radius: 12px; }
+    .hero_wrap .hero_bottom { padding: 40px 32px; }
+
+    .brand_info_wrap { padding: 32px 0 64px; }
+    .brand_info_wrap .container { flex-flow: column; }
+    .brand_info_wrap .img_box , .brand_info_wrap .info_box { width: 100%; }
+    .brand_info_wrap .img_box img { width: 100%; height: 100%; max-height: 550px; object-fit: cover;  border-radius: 12px; }
+    .brand_info_wrap .info_box { padding-left: 0; padding-top: 64px; display: flex; flex-flow: row; gap: 129px; }
+    .brand_info_wrap .info_box .title { max-width: 345px; margin-bottom: 0; }
+
+    .testimonial_wrap { margin: 48px auto 96px;}
+
+    .cta_wrap .bg_img { background-attachment: initial; }
+
+    footer { padding: 58px 0 !important; }
+    footer .container { flex-flow: column; }
+    footer .container h1 { margin-right: 0; margin-bottom: 48px;}
+    footer .container .info_group .group_item {  margin-right: 0; }
+    footer .container .info_group .subscribe { width: 345px; }
+}
+
+
 /* ==============================================================
    미디어쿼리 Mobile
 ==============================================================*/
