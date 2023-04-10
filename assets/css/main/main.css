@@ -7,6 +7,7 @@
   공통
 ==============================================================*/
 .action_btn { background: #000; color: white; font-weight: 700; padding:12px 24px; border-radius: 32px;}
+.show_mobile { display: none; }
 .container { width: 100%; max-width: 1208px; margin: 0 auto; padding: 0 32px; }
 /* ==============================================================
   header
@@ -14,7 +15,12 @@
 header { width: 100%; padding:17px 32px !important; display: flex; margin: 0 auto;
 align-items: center; justify-content: space-between;}
 header .nav_item { font-weight: 500; display: flex; flex-flow: row; gap: 24px; }
-
+header .m_nav_icon { width: 24px; cursor: pointer; }
+header .m_nav_icon:after,
+header .m_nav_icon:before,
+header .m_nav_icon div { background-color: #000; content: ''; display: block; height: 2px; margin: 8px 0; }
+header .m_nav_icon:before { margin-top: 0; }
+header .m_nav_icon:after { margin-bottom: 0; }
 /* ==============================================================
   main
 ==============================================================*/
@@ -116,5 +122,36 @@ footer .container .info_group .subscribe p { color: rgba(225,225,225,0.4); font-
 
 
 /* ==============================================================
-   미디어쿼리 Mobile
+   미디어쿼리 Mobile 768
 ==============================================================*/
+@media all and (max-width: 768px) {
+    .show_mobile { display: block; }
+    .container {  padding: 0 24px; }
+    header .nav_item, header .action_btn { display: none; }
+    header { padding: 20px 24px !important; }
+
+    .hero_wrap .hero_top { padding: 0 24px; }
+    .hero_wrap .hero_top .hero_info_box .title { font-size: 40px; line-height: 1.2; }
+    .hero_wrap .hero_top .hero_info_box .sub_txt { margin-bottom: 24px; }
+    .hero_wrap .hero_top .hero_info_box .bottom_box { flex-flow: column; gap: 16px; }
+    .hero_wrap .hero_top .hero_info_box .bottom_box p { line-height: 2.0; }
+    .hero_wrap .hero_bottom { padding: 24px; }
+    .hero_wrap .hero_bottom ul { flex-flow: column; text-align: center; gap: 48px; }
+    .hero_wrap .hero_bottom ul li { display: flex; flex-flow: column; align-items: center; }
+
+    .brand_info_wrap .info_box { padding-top: 14px; flex-flow: column; gap: 14px; text-align: center; }
+    .brand_info_wrap .info_box .title { max-width: inherit; line-height: 2.0; }
+    .brand_info_wrap .info_box .sub_txt { margin-bottom: 14px; }
+
+    .testimonial_wrap .info_group { flex-flow: column; text-align: center; }
+    .testimonial_wrap .info_group .info_group_item img { margin: 0 auto; }
+    .testimonial_wrap .info_group .info_group_item .item_footer { flex-flow: column; justify-content: inherit; align-items: center; }
+    .item_footer .icons { margin-top: 24px; }
+
+    .cta_wrap .info_box .title { font-size: 28px; line-height: 1.7; margin-bottom: 12px; }
+
+    footer .container h1 { justify-content: center; }
+    footer .container .info_group { flex-wrap: wrap; text-align: center; }
+    footer .container .info_group .group_item { flex: 1 1 30%; }
+    footer .container .info_group .subscribe { width: inherit; margin-top: 20px; }
+}
