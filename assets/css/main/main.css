@@ -15,12 +15,22 @@
 header { width: 100%; padding:17px 32px !important; display: flex; margin: 0 auto;
 align-items: center; justify-content: space-between;}
 header .nav_item { font-weight: 500; display: flex; flex-flow: row; gap: 24px; }
-header .m_nav_icon { width: 24px; cursor: pointer; }
+header .m_nav_icon { width: 24px; cursor: pointer; position: relative; z-index: 20; }
 header .m_nav_icon:after,
 header .m_nav_icon:before,
-header .m_nav_icon div { background-color: #000; content: ''; display: block; height: 2px; margin: 8px 0; }
-header .m_nav_icon:before { margin-top: 0; }
-header .m_nav_icon:after { margin-bottom: 0; }
+header .m_nav_icon div { content: ""; display: block; width: 22px; height: 2px; background: #000; position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%); transition: 0.5s; }
+header .m_nav_icon:before {   margin-top: -8px; }
+header .m_nav_icon:after {  margin-top: 8px; }
+
+header .m_nav_icon.on::before { margin-top: 0; transform: translate(-50%, -50%) rotate(45deg); background: #fff; }
+header .m_nav_icon.on div { left: 200%; opacity: 0; background: #fff;}
+header .m_nav_icon.on::after { margin-top: 0; transform: translate(-50%, -50%) rotate(-45deg); background: #fff; }
+
+header .m_nav_item { position: fixed; width: 100vw; height: 100%; left: -100%; top: 0; background: rgba(0,0,0,0.8); display: flex; flex-flow: column;
+    gap: 20px; padding: 30px 24px;z-index: 10; text-align: center; transition: 0.5s; }
+header .m_nav_item a { font-weight: 700; color: #fff; }
+header .m_nav_item.on { left: 0; }
 /* ==============================================================
   main
 ==============================================================*/
